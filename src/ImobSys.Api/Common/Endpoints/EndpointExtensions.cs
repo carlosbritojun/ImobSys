@@ -7,7 +7,7 @@ public static class EndpointExtensions
     public static IServiceCollection AddCustomSwaggerGen(this IServiceCollection services)
     {
         services.AddSwaggerGen(x => x.CustomSchemaIds(type => type.FullName!
-            .Replace("EazyMob.Api.Modules.", "")
+            .Replace("ImobSys.Api.Modules.", "")
             .Replace("+", ".")
             .Replace("Features.", "")));
 
